@@ -1,0 +1,185 @@
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+    <title>Introduction to html</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="styles1.css" />
+<style>
+    h1,h2,h3{
+        text-align: center;
+        
+        color: rgb(4, 19, 156);
+    }
+    body{
+        color:	black;
+        font-size:20px;	
+        background-image:url("http://www.filterforge.com/filters/1155.jpg");
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Verdana', 'sans-serif';
+        background-attachment:fixed;
+        background-size:cover;
+        background-repeat:no-repeat;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+          }
+</style>
+</head>
+<body style="background-color: rgb(192, 218, 240);" >
+<p>
+<a id="introduction to html">
+
+    <h1 >Introduction to html</h1>
+</a>
+</p>
+<p>
+<i>Continue to read!</i>
+</p>
+<div id="wrapper">
+    <div id="content">
+<p>
+Most of us are aware with the word <abbr title="Hypertext markup language"> HTML</abbr>.
+Whether you are interested in becoming a professional web developer or you simply want to learn more about how websites work, the first thing you need to study is HTML.
+And you know what,Every time you access a website, a server sends an HTML file to your computer and your browser interprets and displays the information included in that file. 
+Infact,what you all browse in your day to day lives are html files.
+</p>
+</div>
+</div>
+
+<strong>
+It's very simple to learn.
+</strong>
+Once we learn html we can proceed further with <i>CSS</i> and <i>JAVASCRIPT.</i>
+<p>
+<h2>
+What is <b>HTML</b>?
+</h2>
+</p>
+
+<div class="brief">
+
+We all know that HTML refers to hyper text markup language, but what html actually means.<i>Here we go!!</i>
+<p>
+<b>HyperText</b> refers to text that contains links to other texts.As more and more pages use hypertext to link to each other, a web of pages starts to form. This is where we get the term World Wide Web.
+<b>Markup</b> refers to the special symbols or codes that are inserted into a document to tell the web browser how to display the document data.
+Like,if we want our text to get bold or italic.
+HTML is just one of a number of languages that uses markup code.
+<b>Language</b> refers to the idea that the code is standardized. Just like regular spoken languages, there are certain rules that everyone must follow when writing HTML. 
+We all know that there are several languages like,python,ruby,java etc and by using them along with html we can create amazing webpages.
+</p>
+</div>
+</blockquote>
+<p>
+If we put these three definitions together, we could say that HTML is <q>a programming language that uses unique code which allows you to display linked documents in a browser</q>.
+</p>
+<p>
+<h2 text=align="center">
+Why should we learn <b>HTML</b>?
+</h2>
+</p>
+<ul>
+    <li>
+        You’ll Have the Knowledge to Build and Understand the Fundamentals of the Web
+    </li>
+    <li>
+        You’ve Got An Entrepreneurial Spirit Or Know Someone That Does
+    </li>
+    <li>
+        You’ll Have the Ability to Create Unique Websites
+    </li>
+    <li>
+        Learn Other Coding Languages Easier and Faster
+    </li>
+    <li>
+        You Can Make More Money
+    </li>
+</ul>
+As you have seen above , we need to develop ourselves in frontend development inspite of backend development.
+
+<p>
+<h2>
+<b>Different versions of HTML.</b>
+</h2>
+</p>
+<p>
+The first version of HTML was developed by physicist Tim Berners-Lee in 1990, and the first publicly available version was released in 1991. Since then, HTML has been updated numerous times to address advances in technology.
+
+</p>
+<p>
+The current standardized version is HTML5, which has been in use since 2014.
+</p>
+<p>
+<h1>
+<b>Basic structure of HTML file.</b>
+</h1>
+</p>
+<p>Simple HTML looks in following way</p>
+Here we go!!
+<img src="{% static 'images/in1.png' %}" alt="Basic html file" title="html file1" width="500px" height="500px" align="middle" class="center"/>
+<p>
+As we have seen in the above figure, for every open tag there should be an ending tag.
+</p>
+<p>If you are new to you might be thinking what the words in above figure means.So lets look into them in details</p>
+<ul>
+<li>The &#60;!DOCTYPE html &#62; declaration defines that this document is an HTML5 document.</li>
+<li>The &#60;html &#62; element is the root element of an HTML page
+</li>
+<li>The &#60;head &#62; element contains meta information about the HTML page</li>
+<li>The &#60;title&#62; element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li>
+<li>The &#60;body&#62; element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+</ul>
+<p>Now you feel better right.</p>
+<p>Now you may get a doubt!For every open should there be a closing tag!Yes!!And you will get to know about it in detail further.</p>
+So,now let us look into some of the tags to make our webpage look attractive!
+<p>We can use headings in our page for attractive look.</p>
+Let me show you an example,
+<p>
+<img src="{% static 'images/in2.png' %}" alt="headings in html" title="headings h1 to h6" width="500px" height="500px" align="middle" class="center"/>
+</p>
+<p>And the output for this would be!</p>
+<h1 style="text-align: left;"><font color="black">WRITE THE CONTENT HERE</font></h1>
+<h2 style="text-align: left;"><font color="black">WRITE THE CONTENT HERE</font></h2>
+<h3 style="text-align: left;"><font color="black">WRITE THE CONTENT HERE</font></h3>
+<h4>WRITE THE CONTENT HERE</h4>
+<h5>WRITE THE CONTENT HERE</h5>
+<h6>WRITE THE CONTENT HERE</h6>
+<p>Sounds interesting right.If we want to write a paragraph which tag should we use?Wanna know about it.Using &#60;p&#62; we can write a paragraph.</p>
+<p>Let us see an example</p>
+<img src="{% static 'images/li3.png' %}" height="200px" width="300px" title="using paragraphs in html" class="center"/>
+<br />Output will be
+<p>So here we can write paragraphs</p>
+<h3>Rules while using tabs.</h3>
+<p>Minly 2 rules are to be followed while using tags.</p>
+<ol>
+<li>You must always use angle brackets for tags. Square brackets and round brackets are used for different purposes in other programming languages. If you try to use square or round brackets in HTML, the browser won’t understand your code.</li>
+<li>Tags almost always come in pairs. This means that (except for a few special examples) you must always close a tag after opening it. If you forget to add a closing tag, the element you are trying to transform won’t display properly. In the worst case scenario, forgetting to close a tag may cause your page to crash. Many text editors will automatically add a closing tag, but it’s a good idea to start getting into the habit of writing tags in pairs. The best way to do this is to write the opening tag first, the closing tag next, then add the content between the tags last.</li>
+</ol>
+<h3>Some Special tags</h3>
+<p><br />We can make our text bold or italic or underline our text using tags &#60;b&#62; or &#60;i&#62; or &#60;u&#62; .
+Suppose if we write &#60;b&#62;Hello World&#60;/b&#62; ,
+then we would get
+<b>Hello World</b>
+</p>
+<p>In similar manner we can apply special effects for our text.It is to be remembered that html is <b>not case sensitive.</b>So basically the structure to use a tag is ,
+<br/><i><b>&#60;tagname&#62; data &#60;/tagname&#62;</b></i></p>
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'js/aos.js' %}"></script>
+  <script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+  <script src="{% static 'js/scrollax.min.js' %}"></script>
+  <script src="{% static 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false' %}"></script>
+  <script src="{% static 'js/google-map.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

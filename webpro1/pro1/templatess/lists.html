@@ -1,0 +1,197 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+<style>
+body{
+color:	black;
+font-size:20px;	
+background-image:url("http://www.filterforge.com/filters/1155.jpg");
+font-family:Lucida Console;
+background-attachment:fixed;
+background-size:cover;
+background-repeat:no-repeat;
+}
+h1,h2,h3{
+  text-align: center;
+  
+  color: rgb(4,19,156);
+}
+
+.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+      }
+.sample1{
+display:block;
+text-align:center;
+}
+</style>
+</head>
+<body style="background-color: rgb(206, 227, 241);">
+<h1 >HTML LISTS</h1>
+<p>Html also has great feature of creating lists.Suppose if you want to give the information like the food items you like, you would list them out . This can be done using &#60;li&#62; tag. Now lets see how we can list the data./p>
+<p><i><b>So, basically lists are of 3 types.</b></i></p>
+<ol>
+<li>unordered list</li>
+<li>ordered list</li>
+<li>description list</li>
+</ol>
+<p><br />
+Let's look into the detailed description.
+<b>What basically is unordered lists?</b>
+It can be used to group a set of related items in no particular order.
+We can understand by this that ordered list is used to group a set of related items in a specific order.
+<b>Then what is description list?</b>
+We all are aware of dictionary, description list works similar to dictionary.
+</p>
+<h2>
+Unordered list
+</h2>
+<p>An unordered list starts with &#60;ul&#62; and each item starts with &#60;li&#62;</p>
+<p>Lists are marked with disc bullets by default.</p>
+<b>Example:</b>
+<img src="{% static 'images\li1.png' %}" title="unordered lists" alt="unordered lists" width="400px" height="400px" class="center"/><br>
+<b>output:</b>
+<p>
+        <p>
+                Lets create an unordered list!
+             </p>
+             <ul>
+                Tips to be safe from covid
+             <li>
+                Stay home stay safe
+             </li>
+             <li>
+                Sanitize your hands regularly
+             </li>
+             <li>
+                Wear masks
+             </li>
+             <li>
+                Stay healthy
+             </li>
+             </ul>
+</p>
+<br>
+<br>
+
+<p>We can also change bullets and have square or a circle or a disc.Lets see an example.</p>
+<p> &#60;ul type="square"&#62;</p>
+<p>&#60;li&#62;water&#60;/li&#62;</p>
+<p>&#60;li&#62;food&#60;/li&#62;</p>
+<p>&#60;/ul&#62;</p>
+<p>The result of using type="square" would give us square bullets.</p>
+<ul type="square">
+<li>water</li>
+<li>food</li>
+
+</ul>
+<p>In similar manner we can use circle,disc type bullets.</p>
+<h2>Ordered lists</h2>
+
+<p>In similar way we can create ordered lists simply by using &#60;ol&#62; instead &#60;ul&#62; of</p>
+<p>lets see an example</p>
+<img src="{% static 'images\li2.png' %}" title="ordered lists" alt="ordered lists" width="400px" height="400px" class="center"/> <br>
+
+<b>
+        Output:
+</b>
+<p>
+        <p>
+                Lets create an unordered list!
+             </p>
+             <ol>
+                Tips to be safe from covid
+             <li>
+                Stay home stay safe
+             </li>
+             <li>
+                Sanitize your hands regularly
+             </li>
+             <li>
+                Wear masks
+             </li>
+             <li>
+                Stay healthy
+             </li>
+             </ol>
+</p>
+<br>
+<br>
+
+<p>It is clear that list is marked with numbers by default.</p>
+<p>As in unordered list we can change numbers to Default-Case Numerals,
+Upper-Case Numerals,
+ Lower-Case Numerals,Upper-Case Letters,
+Lower-Case Letters.</p>
+<div class="sample1">
+<p>&#60;ol type = "1"&#62; - Default-Case Numerals.<br>
+&#60; ol type = "I"&#62;  - Upper-Case Numerals.<br>
+&#60;ol type = "i"&#62;  - Lower-Case Numerals.<br>
+&#60;ol type = "A"&#62;  - Upper-Case Letters.<br>
+&#60;ol type = "a"&#62;  - Lower-Case Letters.</p>
+</div>
+<p>Lets see an example:</p>
+<p>&#60;ol type = "I"&#62;</p>
+        <p> &#60;li&#62;food&#60;/li&#62;</p>
+        <p> &#60;li&#62;water&#60;/li&#62;</p>
+    <p>  &#60;/ol&#62;</p>
+<p>Now result would be</p>
+ <ol type = "I">
+  <li>food</li><br>
+  <li>water</li><br>
+</ol>
+<p>Similarly you can use other types.</p>
+<p>Suppose, if we are using numbers and a case occurs where we have to start with number 5 , what shall we do then!<br>For such case we can use start attribute.</p>
+<p>&#60;ol type = "I" start="5"&#62; </p>
+        <p> &#60;li&#62;food&#60;/li&#62;</p>
+        <p> &#60;li&#62;water&#60;/li&#62;</p>
+    <p>  &#60;/ol&#62;</p>
+<p>See what happens now!</p>
+ <ol type = "I" start="5">
+  <li>food</li><br>
+  <li>water</li><br>
+</ol>
+<h2>Description list</h2>
+<p><b>Next,HTML Description List or Definition List</b> displays elements in definition form like in dictionary. The &#60;dl&#62;, &#60;dt&#62; and &#60;dd&#62; tags are used to define description list.</p>
+<p>The 3 HTML description list tags are given below:</p>
+<ul type="square">
+<li>&#60;dl&#62;  Defines the start of the list</li>
+<li>&#60;dt&#62;  A term</li>
+<li>&#60;dd&#62;  Term definition</li>
+<li>&#60;/dl&#62;  Defines the end of the list</li>
+</ul>
+<div class"sample1">
+<p>Lets see it with example</p>
+
+<p>&#60;dl &#62;<br>
+         &#60;dt&#62; &#60;b&#62;HTML &#60;/b&#62;<br>
+ &#60;/dt&#62;<br>
+         &#60;dd&#62;This stands for Hyper Text Markup Language&#60;/dd&#62;<br>
+         &#60;dt&#62;<br>
+ &#60;b&#62;HTTP &#60;/b&#62;<br>
+ &#60;/dt&#62;<br>
+         &#60;dd&#62;This stands for Hyper Text Transfer Protocol&#60;/dd&#62;<br>
+ <br>&#60;/dl&#62;
+</p>
+
+
+</div>
+<p>Result would be</p>
+
+
+
+<dl>
+         <dt><b>HTML</b></dt>
+         <dd>This stands for Hyper Text Markup Language</dd>
+         <dt><b>HTTP</b></dt>
+         <dd>This stands for Hyper Text Transfer Protocol</dd>
+      </dl>
+
+
+</body>
+
+</html>

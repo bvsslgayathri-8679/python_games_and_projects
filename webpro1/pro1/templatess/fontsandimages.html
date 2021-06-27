@@ -1,0 +1,331 @@
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+    <title>Fonts and images in html</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="styles1.css" />
+<style>
+    h1,h2,h3{
+        text-align: center;
+        
+        color: rgb(4, 19, 156);
+    }
+    body{
+        color:	black;
+        font-size:20px;	
+        background-image:url("http://www.filterforge.com/filters/1155.jpg");
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Verdana', 'sans-serif';
+        background-attachment:fixed;
+        background-size:cover;
+        background-repeat:no-repeat;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+          }
+</style>
+
+</head>
+<body style="background-color: rgb(192, 218, 240);" alink = "#54A250" link = "#040404" vlink = "#F40633">
+<p>
+<a id="fontsandimages">
+
+    <h1 >Fonts in html</h1>
+</a>
+</p>
+<p>
+<i>Continue to read!</i>
+</p>
+<div id="wrapper">
+    <div id="content">
+        <h2>Fonts</h2>
+<p>
+    Fonts play a very important role in making a website more user friendly and increasing content readability. 
+    Font face and color depends entirely on the computer and browser that is being used to view your page but you can use HTML &lt;font&gt;  tag to add style, size, and color to the text on your website. 
+    You can use a &lt; basefont &gt; tag to set all of your text to the same size, face, and color.
+        The font tag is having three attributes called size, color, and face to customize your fonts. 
+        To change any of the font attributes at any time within your webpage, simply use the &lt;font&gt;  tag. 
+        The text that follows will remain changed until you close with the &lt;/font&gt;  tag. 
+        You can change one or all of the font attributes within one &lt;font&gt;  tag.
+</p>
+</div>
+</div>
+
+<strong>
+    Set Font Size
+</strong>
+You can set content font size using size attribute. The range of accepted values is from 1(smallest) to 7(largest). The default size of a font is 3.
+<p>
+    lets see an example!
+
+</p>
+<img src="{% static 'images/fon1.png' %}" class="center" />
+our web page looks like!
+<p>
+<font size = "1">Font size = "1"</font><br />
+      <font size = "2">Font size = "2"</font><br />
+      <font size = "3">Font size = "3"</font><br />
+      <font size = "4">Font size = "4"</font><br />
+      <font size = "5">Font size = "5"</font><br />
+      <font size = "6">Font size = "6"</font><br />
+      <font size = "7">Font size = "7"</font>
+</p>
+<h3>
+    Relative Font Size
+</h3>
+<p>
+
+
+You can specify how many sizes larger or how many sizes smaller than the preset font size should be. You can specify it like &lt;font size = "+n"&gt; or &lt;font size = "−n"&gt;&lt;/font&gt;
+</p>
+example:
+<img src="{% static 'images/fon2.png' %}" class="center" />
+<p>
+    output would be!<br />
+
+
+    <font size = "-1">Font size = "-1"</font><br />
+    <font size = "+1">Font size = "+1"</font><br />
+    <font size = "+2">Font size = "+2"</font><br />
+    <font size = "+3">Font size = "+3"</font><br />
+    <font size = "+4">Font size = "+4"</font>
+</p>
+<h3>
+    Setting Font Face
+</h3>
+<p>
+
+    You can set font face using face attribute but be aware that if the user viewing the page doesn't have the font installed, they will not be able to see it. Instead user will see the default font face applicable to the user's computer.
+</p>
+example:
+<img src="{% static 'images/fon3.png' %}" class="center" />
+<p>
+    output would be!<br />
+
+    <font face = "Times New Roman" size = "5">Times New Roman</font><br />
+    <font face = "Verdana" size = "5">Verdana</font><br />
+    <font face = "Comic sans MS" size =" 5">Comic Sans MS</font><br />
+    <font face = "WildWest" size = "5">WildWest</font><br />
+    <font face = "Bedrock" size = "5">Bedrock</font><br />
+</p>
+<h3>
+    Specify alternate font faces
+</h3>
+<p>
+
+    A visitor will only be able to see your font if they have that font installed on their computer. So, it is possible to specify two or more font face alternatives by listing the font face names, separated by a comma.
+</p>
+example:
+<p>
+    &lt;font face = "arial,helvetica"&gt;
+    &lt;font face = "Lucida Calligraphy,Comic Sans MS,Lucida Console"&gt;
+</p>
+<p>
+    Here,
+    When your page is loaded, their browser will display the first font face available. If none of the given fonts are installed, then it will display the default font face Times New Roman.
+</p>
+
+<h3>
+    Setting Font color
+</h3>
+<p>
+
+    You can set any font color you like using color attribute. You can specify the color that you want by either the color name or hexadecimal code for that color.
+</p>
+example:
+<img src="{% static 'images/fon4.png' %}" class="center" />
+<p>
+    output would be!<br />
+    <font color = "#FF00FF">This text is in pink</font><br />
+    <font color = "red">This text is red</font>
+</p>
+
+<h3>
+    The &lt; basefont &gt; Element
+</h3>
+<p>
+    The &lt; basefont&gt; element is supposed to set a default font size, color, and typeface for any parts of the document that are not otherwise contained within a &lt;font&gt; tag. You can use the &lt;font&gt; elements to override the &lt;basefont&gt; settings.
+
+        The &lt; basefont&gt; tag also takes color, size and face attributes and it will support relative font setting by giving size a value of +1 for a size larger or −2 for two sizes smaller.
+    </p>
+example:
+<img src="{% static 'images/fon5.png' %}" class="center" />
+<p>
+    our webpage would look like<br />
+    <p>
+        ---------------
+    </p>
+    <basefont face = "arial, verdana, sans-serif" size = "2" color = "#ff0000">
+        <p>This is the page's default font.</p>
+        <h2 color="black" >Example of the &lt;basefont&gt; Element</h2>
+        
+        <p><font size = "+2" color = "darkgray">
+              This is darkgray text with two sizes larger
+           </font>
+        </p>
+  
+        <p><font face = "courier" size = "-1" color = "#000000">
+              It is a courier font, a size smaller and black in color.
+           </font>
+        </p>
+        <p>
+            -----------
+        </p>
+</p>
+<h1 >Images and links in html</h1>
+</a>
+</p>
+
+<div id="wrapper">
+    <div id="content">
+        <h2>Links</h2>
+<p>
+    A webpage can contain various links that take you directly to other pages and even specific parts of a given page. These links are known as hyperlinks.
+
+    Hyperlinks allow visitors to navigate between Web sites by clicking on words, phrases, and images. Thus you can create hyperlinks using text or images available on a webpage.
+</p>
+</div>
+</div>
+
+<h3>
+    Linking Documents
+</h3>
+
+<p>
+
+    A link is specified using HTML tag &lt;a&gt;. This tag is called anchor tag and anything between the opening &lt;a&gt; tag and the closing &lt;/a&gt; tag becomes part of the link and a user can click that part to reach to the linked document. Following is the simple syntax to use &lt;a&gt; tag.
+</p>
+<b>
+    Syntax:
+</b>
+<p>
+    &lt;a href = "Document URL" ... attributes-list &gt; Link Text &lt; /a &gt;
+</p>
+example:
+<img src="{% static 'images/lin1.png' %}" class="center" />
+<p>
+    we would get!<br />
+
+    <p>Click following link to go to youtube</p>
+    <a href = "https://www.youtube.com" target = "_blank">Youtube</a>
+</p>
+<h3>
+    The target Attribute
+</h3>
+<p>
+    We have used target attribute in our previous example. This attribute is used to specify the location where linked document is opened. Following are the possible options −
+</p>
+<ul>
+<li>
+    <b>
+        _blank
+    </b>
+    <p>
+        Opens the linked document in a new window or tab.
+    </p>
+</li>
+<li>
+    <b>
+        _self
+    </b>
+    <p>
+        Opens the linked document in the same frame.
+    </p>
+</li>
+<li>
+    <b>
+        _parent
+    </b>
+    <p>
+        Opens the linked document in the parent frame.
+    </p>
+</li>
+<li>
+    <b>
+        _top
+    </b>
+    <p>
+        Opens the linked document in the full body of the window.
+    </p>
+</li>
+<li>
+    <b>
+        targetframe
+    </b>
+    <p>
+        Opens the linked document in a named targetframe.
+    </p>
+</li>
+</ul>
+
+<p>
+    We can set colours to our links using link,alink,vlink attributes of body tag.
+
+</p>
+
+<p>
+    example:
+</p>
+
+<img src="{% static 'images/lin2.png' %}" class="center" />
+<p>
+    we would get!<br />
+
+    <p>Click following link</p>
+    <a href = "https://www.youtube.com/results?search_query=learn+html" target = "_blank" >songs</a>
+</p>
+
+
+
+
+
+<div>
+    To go to a page in our website we use links.
+    Lets understand it.
+
+</div>
+<h4>&lt; a href="index.html"&gt; Home page &lt;/a&gt; </h4>
+
+<p>
+    This would take us to home page.
+
+</p>
+<a href="index.html">
+Home page
+</a>
+
+
+<div id="wrapper">
+    <div id="content">
+        <h2>Images</h2>
+<p>
+    Images are very important to beautify as well as to depict many complex concepts in simple way on your web page. 
+    This tutorial will take you through simple steps to use images in your web pages.
+</p>
+</div>
+</div>
+<h3 align="center">
+    Insert Image
+</h3>
+<p>
+    You can insert any image in your web page by using &lt;img &gt; tag. Following is the simple syntax to use this tag.
+</p>
+&lt;img src = "Image URL" ... attributes-list/&gt;
+<p>
+    The &lt; img &gt; tag is an empty tag, which means that, it can contain only list of attributes and it has no closing tag.
+</p>
+<b>
+    Example
+</b>
+<img src="{% static 'images/img1.png' %}" class="center" />
+<p>We get our image on webpage!
+In the similar way we can get videos, audio , multi media data on our webpage.  
+</p>
+
+
+
+</body>
+</html>

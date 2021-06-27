@@ -1,0 +1,223 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+    <style>
+        body{
+        color:	black;
+        font-size:20px;	
+        background-color: rgb(192, 219, 236);
+        background-image:url("http://www.filterforge.com/filters/1155.jpg");
+        font-family:Lucida Console;
+        background-attachment:fixed;
+        background-size:cover;
+        background-repeat:no-repeat;
+        }
+        h1,h2,h3{
+          text-align: center;
+          
+          color: rgb(4,19,156);
+        }
+        
+        
+        .sample1{
+        display:block;
+        text-align:center;
+        }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+
+      }
+
+</style>
+</head>
+<body>
+<h1>
+TABLES
+</h1>
+<p>
+So,basically a table is created using tag &#60;table&#62;. Each table row is defined with the tag &#60;tr&#62; tag. A table header is defined with the tag &#60;th&#62; tag. By default, table headings are bold and centered. A table data/cell is defined with the tag &#60;td&#62; tag.
+</p>
+<p><img src="{% static 'images\Screenshot (38).png' %}" alt="table " title="table 1" height="500px" width="250px" class="center" />
+ output would be!!
+
+ <table>
+    <tr>
+       <th>
+          name
+       </th>
+       <th>
+          marks
+       </th>
+    </tr>
+    <tr>
+       <td>
+          Ravi
+       </td>
+       <td>
+          98
+       </td>
+    </tr>
+    <tr>
+      <td> Somu</td> 
+      <td>
+         99
+      </td>
+    </tr>
+    
+ </table>
+</p>
+<h2>
+<div class="cls1">
+Browser suport
+</div>
+
+</h2>
+<div >
+<table class="name" border="1" align="center" cellpadding=10px>
+    <tr>
+        <th>
+            element
+        </th>
+        <th>
+            chrome
+        </th>
+        <th>
+            microsoft edge
+        </th>
+        <th>
+            firefox
+        </th>
+        <th>
+            safari
+        </th>
+        <th>
+            opera
+        </th>
+        <th>
+            brave
+        </th>
+    </tr>
+    <tr>
+        <td>
+            yes
+        </td>
+        <td>
+            yes
+        </td>
+        <td>
+            yes
+        </td>
+        <td>
+            yes
+        </td>
+        <td>
+            yes
+        </td>
+        <td>
+            yes
+        </td>
+        <td>
+            yes
+        </td>
+    </tr>
+</table>
+    <div>
+Let us see a few examples <br>
+
+&lt html &gt <br>
+&lt head &gt <br>
+
+&lt /head &gt <br>
+&lt body &gt <br>
+
+&lt table border = "1" &gt <br>
+&lt tr &gt <br>
+&lt th &gt Month &lt /th &gt <br>
+&lt th &gtSavings &lt/th &gt <br>
+&lt /tr &gt <br>
+&lt tr &gt <br>
+&lt td &gt sales &lt /td &gt <br>
+&lt td &gt $100 &lt/td &gt <br>
+&lt /tr &gt <br>
+&lt tr &gt <br>
+&lt td &gt profit &lt /td &gt <br>
+&lt td &gt $80 &lt /td &gt <br>
+&lt /tr &gt <br>
+&lt /table &gt <br>
+
+&lt /body &gt <br>
+&lt /html &gt <br>
+</div>
+<div>
+    what the output would be!
+<table border = "2">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>sales</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>profit</td>
+    <td>$80</td>
+  </tr>
+</table>
+
+<div>
+    lets see another one!!
+    
+
+&lt table border = "1" cellpadding = "5" cellspacing = "5" bordercolor = "green" bgcolor = "yellow" &gt <br>
+&lt tr &gt <br>
+&lt th &gt Month &lt /th &gt <br>
+&lt th &gtSavings &lt/th &gt <br>
+&lt /tr &gt <br>
+&lt tr &gt <br>
+&lt td &gt sales &lt /td &gt <br>
+&lt td &gt $100 &lt/td &gt <br>
+&lt /tr &gt <br>
+&lt tr &gt <br>
+&lt td &gt profit &lt /td &gt <br>
+&lt td &gt $80 &lt /td &gt <br>
+&lt /tr &gt <br>
+&lt /table &gt <br>
+
+</div>
+<div>
+  
+
+<table border= "1" cellpadding = "5" cellspacing = "5"  bgcolor = "yellow">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+</table>
+</div>
+</div>
+</div>
+<div>
+    So, we have several properties like,cellpadding, cellspacing, bgcolor, border, background , rowspan, colspan etc.
+    rowspan and colspan are used to merge rows and columns.
+
+</div>
+<div>
+    Click on following link for more details.
+    <a href="https://www.w3schools.com/html/html_tables.asp">html tables</a>
+</div>
+</body>
+</html>
